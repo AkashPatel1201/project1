@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import Link from 'next/link';
 import styles from './header.module.scss'
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+
 export const Header = ({ children }: any) => {
     return (
         <>

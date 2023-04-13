@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Header } from "..";
 import Head from "next/head";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Container = ({children}:any) => {
   return (
     <>

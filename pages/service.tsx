@@ -1,10 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import { Header } from '@components/Header';
 import Head from "next/head";
 import Link from 'next/link';
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const getStaticProps = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await res.json();
@@ -16,7 +14,6 @@ export const getStaticProps = async () => {
     };
 };
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const Service = ({ data }: any) => {
     return (
         <>

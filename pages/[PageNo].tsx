@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Header } from '@components/Header';
 import Head from 'next/head';
 import React from 'react';
@@ -7,7 +6,6 @@ export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await res.json();
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const paths = data.map((curElem: any) => {
         return {
             params: {
@@ -22,7 +20,6 @@ export const getStaticPaths = async () => {
     };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getStaticProps = async (context: any) => {
     const id = context.params.PageNo;
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
@@ -35,7 +32,6 @@ export const getStaticProps = async (context: any) => {
     };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MyData = ({ data }:any) => {
     return (
         <>
