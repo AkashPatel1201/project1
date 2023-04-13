@@ -44,7 +44,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "../../myapp1/404.tsx"  ],
+, "../../myapp1/404.tsx", "../../myapp1/index.ts"  ],
   "exclude": [
     "node_modules"
   ]
