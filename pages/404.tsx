@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { Header } from '@components/Header';
+import { Header } from '@components/Header/index';
 
 const ErrorPage = ():JSX.Element => {
     const router = useRouter();
