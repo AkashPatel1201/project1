@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-// import { Header } from "..";
-import Header from "@components/Header";
+import { Header } from "..";
 import Head from "next/head";
 
 export const Container = ({children}:any) => {
@@ -17,5 +14,3 @@ export const Container = ({children}:any) => {
     </>
   )
 };
-
-export default Container;

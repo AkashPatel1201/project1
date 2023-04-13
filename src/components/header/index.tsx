@@ -1,9 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react';
 import Link from 'next/link';
 import styles from './header.module.scss'
-
 
 export const Header = ({ children }: any) => {
     return (
@@ -43,4 +40,3 @@ export const Header = ({ children }: any) => {
         </>
     )
 }
-export default Header;
