@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { Header } from '@components/Header/index';
+// import { Header } from '@components/Header/index';
 
 const ErrorPage = ():JSX.Element => {
     const router = useRouter();
@@ -12,7 +12,7 @@ const ErrorPage = ():JSX.Element => {
     }, []);
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div className='text-center mt-5 py-5'>
                 <h1 className='text-2xl font-semibold py-5'>We are Sorry,Page is not found.</h1>
                 {/* <Link href="/" className='bg-black text-white py-3 px-4 rounded-lg'>Back to Home</Link> */}
