@@ -1,4 +1,3 @@
-// import { Header } from '@components/Header';
 import Head from 'next/head';
 import React from 'react';
 
@@ -39,7 +38,6 @@ const MyData = ({ data }: { data: any }) => {
                 <title>Service Page</title>
                 <link rel="icon" href="icons/favicon.ico" />
             </Head>
-            {/* <Header /> */}
             <div className='container mt-4 flex flex-col text-center'>
                 <div className='flex text-left p-5 my-0.5 rounded-xl m-auto shadow-md w-3/5'>
                     <div className=''>
