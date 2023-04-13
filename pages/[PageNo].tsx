@@ -6,7 +6,7 @@ export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await res.json();
 
-    const paths = data.map((curElem:any) => {
+    const paths = data.map((curElem: any) => {
         return {
             params: {
                 PageNo: curElem.id.toString(),
@@ -20,7 +20,7 @@ export const getStaticPaths = async () => {
     };
 };
 
-export const getStaticProps = async ({context}:{context:any}) => {
+export const getStaticProps = async (context: any) => {
     const id = context.params.PageNo;
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
     const data = await res.json();
@@ -32,7 +32,7 @@ export const getStaticProps = async ({context}:{context:any}) => {
     };
 };
 
-const MyData = ({ data }:{data:any}) => {
+const MyData = ({ data }: { data: any }) => {
     return (
         <>
             <Head>
