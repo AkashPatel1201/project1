@@ -2,13 +2,16 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
+  "rules": {
+    // disable the rule for all files
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
   "overrides": [
     {
       "files": ["*.js"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off",
-        "react/no-unescaped-entities": "off",
-        "@next/next/no-page-custom-font": "off"
+        "@typescript-eslint/explicit-module-boundary-types": ["error"]
       }
     }
   ],
