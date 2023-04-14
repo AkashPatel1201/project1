@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react';
 import { Header } from '@components/Header';
 import Head from "next/head";
@@ -31,7 +29,7 @@ const Service = ({ data }: any) => {
                     <div key={curElem.id} className='flex text-left p-5 my-0.5 rounded-xl m-auto shadow-md'>
                         <div className='flex'>
                             <h3 className='py-1 px-3 bg-blue-400 rounded-3xl'>{curElem.id}</h3>
-                            <Link href={`/${curElem.id}`}>
+                            <Link href={`/service/${curElem.id}`}>
                             <h3 className='pl-3 self-center cursor-pointer hover:text-red-500'>{curElem.title}</h3>
                             </Link>
                         </div>
