@@ -3,8 +3,6 @@ import { Header } from '@components/Header';
 import Head from "next/head";
 import axios from 'axios';
 
-
-
 const Contact = (): JSX.Element => {
   const [myData, setMyData] = useState([]);
   const [isError, setError] = useState("");
